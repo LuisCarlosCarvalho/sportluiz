@@ -169,35 +169,9 @@ export default function Dashboard() {
       <header className="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-neutral-900 pb-6 mb-8 gap-4">
         <div>
           <h1 className="text-xl font-black font-mono tracking-tighter text-white">
-            SPORTLUIZ // PERFORMANCE LAB
+            SPORTLUIZ // RESUMO PERFORMANCE
           </h1>
           <p className="text-neutral-500 text-xs mt-1">Coleta Avançada de Eventos Táticos em Tempo Real</p>
-        </div>
-        
-        <div className="flex items-center gap-3 self-stretch md:self-auto justify-between md:justify-start">
-          <div className="flex items-center gap-2">
-            <span className="text-[10px] font-mono font-bold bg-neutral-900 border border-neutral-800 text-neutral-400 px-3 py-1.5 rounded-lg">
-              USER: <span className="text-white">{user?.email}</span>
-            </span>
-            <button
-              onClick={() => navigate('/plans')}
-              className={`text-[10px] font-mono font-bold px-3 py-1.5 rounded-lg border uppercase tracking-wider transition-all ${
-                currentTier === 'FREE' 
-                  ? 'bg-neutral-900 border-neutral-800 text-emerald-400 hover:border-emerald-500/50 hover:bg-neutral-800'
-                  : 'bg-emerald-950 border-emerald-900 text-emerald-300 font-extrabold hover:bg-emerald-900'
-              }`}
-            >
-              PLANO: {currentTier}
-            </button>
-          </div>
-          
-          <button 
-            onClick={handleLogout}
-            title="Log Out"
-            className="p-2 border border-neutral-800 bg-neutral-900/60 hover:bg-red-950/40 hover:text-red-400 hover:border-red-950 rounded-lg transition-all"
-          >
-            <LogOut size={16} />
-          </button>
         </div>
       </header>
 

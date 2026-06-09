@@ -11,7 +11,24 @@ const prisma = new PrismaClient();
 
 // In-Memory Database Fallback Store for local testing without PostgreSQL
 const dbStore = {
-  users: [],
+  users: [
+    {
+      id: 'mock-user-analyst-id-2026',
+      email: 'analista@sportluiz.com',
+      password: 'senha123',
+      subscriptionTier: 'FREE',
+      createdAt: new Date(),
+      stripeCustomerId: null
+    },
+    {
+      id: 'mock-user-admin-id-2026',
+      email: 'admin@fslsolution.com',
+      password: 'senha123',
+      subscriptionTier: 'FREE',
+      createdAt: new Date(),
+      stripeCustomerId: null
+    }
+  ],
   matches: [],
   events: []
 };
