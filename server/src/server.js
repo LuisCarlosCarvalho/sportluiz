@@ -24,7 +24,15 @@ const dbStore = {
       id: 'mock-user-admin-id-2026',
       email: 'admin@fslsolution.com',
       password: 'senha123',
-      subscriptionTier: 'FREE',
+      subscriptionTier: 'ENTERPRISE',
+      createdAt: new Date(),
+      stripeCustomerId: null
+    },
+    {
+      id: 'mock-user-sportluiz-admin-id-2026',
+      email: 'admin@sportluiz.com',
+      password: 'admin',
+      subscriptionTier: 'ENTERPRISE',
       createdAt: new Date(),
       stripeCustomerId: null
     }

@@ -11,7 +11,8 @@
     "install:all": "npm install && npm install --prefix client && npm install --prefix server",
     "prisma:validate": "prisma validate --schema=database/schema.prisma",
     "prisma:generate": "prisma generate --schema=database/schema.prisma",
-    "prisma:push": "prisma db push --schema=database/schema.prisma"
+    "prisma:push": "prisma db push --schema=database/schema.prisma",
+    "db:seed": "node database/seed.js"
   },
   "devDependencies": {
     "prisma": "^5.14.0"
